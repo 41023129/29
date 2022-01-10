@@ -6,9 +6,6 @@
 <p>網站連結: <a href="https://41023129.github.io/cp2021_hw/content/index.html">https://41023129.github.io/cp2021_hw/content/index.html</a></p>
 <p>其他與個人或作業相關資料說明或介紹</p>
 <h2>run</h2>
-<p>from browser import html<br/>from browser import document as doc<br/>import browser.timer</p>
-<p>canvas = html.CANVAS(width = 400, height = 100)<br/>canvas.id = "game-board3"<br/>brython_div = doc["brython_div3"]<br/>brython_div &lt;= canvas<br/>ctx = canvas.getContext("2d")<br/>px = 0<br/>py = 50<br/>width = 20<br/>height = 20<br/>speedx = 2<br/>speedy = 2</p>
-<p>def game():<br/> global px, py, width, height, speedx, speedy <br/> ctx.clearRect(px, py, width, height)<br/> ctx.fillStyle = "red"<br/> px += speedx<br/> if px &gt; (canvas.width)/2 :<br/> speedx = 0<br/> py += speedy<br/> if py &lt; 0 or (py+height) &gt; (canvas.height):<br/> speedy = -speedy<br/> ctx.fillRect(px, py, width, height)<br/> <br/>browser.timer.set_interval(game, 10)</p>
 <p></p>
 <h1>HW1</h1>
 <p></p>
@@ -33,6 +30,26 @@
 <p>2. 請登入 Github 帳號後, 連線至 <a href="https://github.com/mdecourse/cp2021_hw">https://github.com/mdecourse/cp2021_hw</a> 後, 透過 <span style="background-color: #00ff00;">Use this template</span> 按鈕建立自己的 cp2021_hw 倉儲. 並至該倉儲的 Settings -&gt; Pages -&gt; Source 將 main 分支設為 Github Pages 的 root (也就是選擇將倉儲的 main 分支設為對應網站的根目錄).</p>
 <p>3. 請將 HW1 與 HW2 的作業內容登錄至個人的 cp2021_hw 倉儲與網站中. (學習如何透過 git 指令修改倉儲中的版本內容)</p>
 <p>4. 請在個人作業網站的 HW2 區域下增設一個 H2 頁面, 將該網頁標題命名為 run, 可以如 <a href="https://mde.tw/cp2021/content/run.html">run</a> 頁面中的內容, 並且利用此頁面收集 Python 範例程式. (例如: 可自動執行的貪食蛇: <a href="https://mde.tw/cp2021/content/run.html?src=https://gist.githubusercontent.com/mdecourse/d306a1f57e53bfd6466eaae20bcb9439/raw/2160a12b9fec9707a120a383ed5d38b9b78a02cf/snake.py">https://mde.tw/cp2021/content/run.html?src=https://gist.githubusercontent.com/mdecourse/d306a1f57e53bfd6466eaae20bcb9439/raw/2160a12b9fec9707a120a383ed5d38b9b78a02cf/snake.py</a> 將 <a href="https://gist.github.com/mdecourse/d306a1f57e53bfd6466eaae20bcb9439">https://gist.github.com/mdecourse/d306a1f57e53bfd6466eaae20bcb9439</a> 作為 <a href="https://mde.tw/cp2021/content/run.html">https://mde.tw/cp2021/content/run.html</a> 頁面中 src 變數的值, 就可以在頁面中導入程式碼並執行)</p>
+<p></p>
+<h2>HW2-2</h2>
+<p></p>
+<p>如何建立作業倉儲</p>
+<p>1.登入GitHub帳號</p>
+<p>2.進入老師的作業倉儲<a href="https://github.com/mdecourse/cp2021_hw">https://github.com/mdecourse/cp2021_hw</a></p>
+<p>按Use this template 在Repository name 輸入倉儲名稱cp2021_hw</p>
+<p>點選<span>Create repository from template 複製頁面出現的網址</span></p>
+<p><span>3.開啟cmd(黑色的編譯器)並依序出入以下字串</span></p>
+<p><span>輸入cd tmp/</span><span>cp2021_hw</span></p>
+<p><span>輸入cms</span></p>
+<p><span>4.接著會出現一段網址(https://127.0.0.1:9448/)</span></p>
+<p><span>輸入網址後進入近端網頁</span></p>
+<p><span>Login密碼為admin 輸入後將網頁改成靜態網頁就可以編輯自己的作業網站</span></p>
+<p><span>編輯完成後要將網頁改成靜態</span></p>
+<p><span>5.要從cmd推資料到近端時按ctrl+c兩次</span></p>
+<p><span>輸入acp "作業倉儲名稱" </span></p>
+<p><span>6.從倉儲裡的settings點選pages，將Source改為main並儲存</span></p>
+<p><span>這樣就能把編輯的資料推到近端</span></p>
+<p><span></span></p>
 <h1>HW3</h1>
 <p></p>
 <p>HW3 - AI 貪食蛇佔學期成績 30%.</p>
